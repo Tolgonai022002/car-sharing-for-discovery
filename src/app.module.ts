@@ -6,12 +6,14 @@ import { User } from './modules/user/entities/user.entity';
 import { ImageModule } from './modules/image/image.module';
 import { UserModule } from './modules/user/user.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { CarsModule } from './modules/cars/cars.module';
 
 @Module({
   imports: [
     ImageModule,
     UserModule,
     AuthModule,
+    CarsModule,
     ConfigModule.forRoot({
       isGlobal: true,
     }),
@@ -36,4 +38,3 @@ import { AuthModule } from './modules/auth/auth.module';
   controllers: [],
 })
 export class AppModule {}
-
